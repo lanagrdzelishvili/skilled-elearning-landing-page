@@ -1,7 +1,6 @@
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #F2F2F2;
-    width: 375px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -28,6 +27,8 @@ body {
     background: #13183F;
     border-radius: 28px;
     padding: 9px 24px 11px 24px;
+    width: 167px;
+    height: 56px;
 }
 .text-container-h1 {
     font-style: normal;
@@ -58,9 +59,11 @@ body {
     background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);  
     border-radius: 31.5px;
     padding: 15px 37px;
-    align-self: start;
+    margin-right: 200px;
+    width: 167px;
+    height: 56px;
 }
-.header, .text-container, .img, .cards {
+main, .header, .text-container, .img, .cards {
     background: #FFFFFF;
 }
 .header {
@@ -126,11 +129,10 @@ body {
     line-height: 28px;
     color: #F74780;
 }
-.svg1 {
+.svg1, .svg2, .svg3, .svg4, .svg5 {
     transform: translatey(-25px);
 }
 .footer {
-    width: 375px;
     height: 120px;
     background: #13183F;
     display: flex;
@@ -139,7 +141,6 @@ body {
     padding: 43px 16px 42px 16px;
 }
 .footer-p {
-    font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 800;
     font-size: 28px;
@@ -147,7 +148,6 @@ body {
     color: #FFFFFF;
 }
 .footer-button {
-    font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -156,4 +156,6 @@ body {
     background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
     border-radius: 28px;
     padding: 9px 24px 11px 24px;
+    width: 167px;
+    height: 56px;
 }
