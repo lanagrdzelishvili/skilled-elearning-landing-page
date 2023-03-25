@@ -4,9 +4,8 @@
     }
     .hero-tablet {
         display: flex;
-    }
-    body {
-        
+        right: -300px;
+        top: -200px;
     }
     main {
         display: flex;
@@ -14,7 +13,15 @@
         padding-bottom: 70px;
     }
     .header {
+        position: relative;
         padding: 31px 40px 0 40px;
+    }
+    .header-button {
+        position: absolute;
+        z-index: 1;
+        top: 30px;
+        right: 40px;
+        /* left: 600px; */
     }
     .text-container {
         width: 60%;
@@ -24,9 +31,8 @@
     }
     .hero-tablet {
         position: absolute;
-        left: 370px;
+        left: 400px;
         top: -150px;
-        overflow: hidden;
     }
     .text-container-h1 {
         width: 326px;
@@ -56,5 +62,121 @@
     .footer {
         display: flex;
         padding: 43px 39px 42px 40px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .hero-mobile, .hero-tablet {
+        display: none;
+    }
+    .hero-desktop {
+        display: flex;
+    }
+    .header {
+        padding: 29px 165px 0 165px;
+    }
+    .header-logo {
+        width: 120px;
+        height: 35px;
+    }
+    .header-button {
+        font-size: 18px;
+        padding: 0;
+        width: 167px;
+        height: 56px;
+        top: 25px;
+        right: 165px;
+    }
+    .text-container-h1 {
+        width: 457px;
+        height: 143px;
+        font-size: 56px;
+        line-height: 71px;
+        margin-bottom: 29px;
+    }
+    .text-container-p {
+        width: 445px;
+        height: 84px;
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+    .text-container-button {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 19px 31px 16px 32px;
+        width: 167px;
+        height: 63px;
+
+        margin-right: 200px;
+    }
+    .text-container {
+        gap: 0;
+        width: 100%;
+        height: 750px;
+        align-items: start;
+        padding: 0 0 0 165px;
+    }
+    .hero-desktop {
+        position: absolute;
+        right: -300px;
+        top: -200px;
+    }
+    .cards {
+        margin-bottom: 140px;
+        row-gap: 80px;
+        column-gap: 30px;
+    }
+    .card0 {
+        width: 350px;
+        height: 322px;
+        font-size: 32px;
+        line-height: 40px;
+        padding: 64px 32px 138px 32px;
+    }
+    .card1, .card2, .card3, .card4, .card5 {
+        width: 350px;
+        height: 322px;
+        padding: 0 32px 40px 32px;
+    }
+    .p1, .p1-2, .p1-3, .p1-4, .p1-5 {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .p2, .p2-2, .p2-3, .p2-4, .p2-5 {
+        font-size: 18px;
+        line-height: 28px;
+        height: 112px;
+    }
+    .footer {
+        display: flex;
+        padding: 38px 165px;
+    }
+    .footer-p {
+        width: 114px;
+        height: 45px;
+        font-size: 36px;
+        line-height: 45px;
+    }
+    .footer-button {
+        font-size: 18px;
+        padding: 14px 31px;
+        width: 167px;
+        height: 56px;
+    }
+
+    .header-button:hover {
+        background: #666CA3;
+        cursor: pointer;
+    }
+    .text-container-button:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+        cursor: pointer;
+    }
+    .footer-button:hover {
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+        cursor: pointer;
     }
 }
